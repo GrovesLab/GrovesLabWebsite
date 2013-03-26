@@ -1,0 +1,136 @@
+      body {
+        font-family: Calibri;
+        background-color: gray;
+        color: white;
+        font-size: 16px;
+      }
+
+      a:link {
+        color: white;
+      }
+
+  a:hover {
+  color: white;
+  }
+  a:visited {
+  color: white;
+  }
+
+      ul {
+        list-style: none;
+        padding-left: 10px; 
+      }
+      span.website {
+        font-size: 16px;
+      }
+      #nav {
+        vertical-align:top;
+        width:130px;
+        padding:0px;
+        margin:0px;
+      }
+      #nav ul {
+        margin:0px;
+        padding:0px;
+      }
+
+      #outertable td {
+        height: 80px;
+      }
+
+      #content {
+        width: 800px;
+        padding: 10px 30px 10px 20px;
+        font-family: Calibri;
+        font-size:18;
+        color:white;
+      }
+
+      td.student {
+        width: 280px;
+      }
+      .student img {
+        width: 186px;
+        height: 140px;
+        border: 0px;
+      }
+      .button {
+        height: 80px;
+        width: 150px;
+        border: 2px ridge #333;
+      }
+
+      #button_scientists {
+        height: 80px;
+        background: url("./img/button_scientists_combined.jpg") left top no-repeat;
+      }
+      #button_scientists:hover {
+        background-position: left bottom;
+      }
+
+      #button_publication {
+        height: 80px;
+        background: url("./img/button_publication_combined.jpg") left top no-repeat;
+      }
+      #button_publication:hover {
+        background-position: left bottom;
+      }
+
+      #button_seminars {
+        height: 80px;
+        background: url("./img/button_seminars_combined.jpg") left top no-repeat;
+      }
+      #button_seminars:hover {
+        background-position: left bottom;
+      }
+
+      #button_science {
+        height: 80px;
+        background: url("./img/button_science_combined.jpg") left top no-repeat;
+      }
+      #button_science:hover {
+        background-position: left bottom;
+      }
+
+      #button_news {
+        height: 80px;
+        background: url("./img/button_news_combined.jpg") left top no-repeat;
+      }
+      #button_news:hover {
+        background-position: left bottom;
+      }
+
+      #button_links {
+        height: 80px;
+        background: url("./img/button_links_combined.jpg") left top no-repeat;
+      }
+      #button_links:hover {
+        background-position: left bottom;
+      }
+
+      #button_groupmeeting {
+        height: 80px;
+        width: 224px;
+        background: url('img/Seminars Group Meeting_combined.jpg') left top no-repeat;
+      }
+      #button_groupmeeting:hover {
+        background-position: left bottom;
+      }
+
+      #button_seminarprof {
+        height: 80px;
+        width: 253px;
+        background: url('img/Seminars Prof_combined.jpg') left top no-repeat;
+      }
+      #button_seminarprof:hover {
+        background-position: left bottom;
+      }
+      #button_seminargroup {
+        height: 80px;
+        width: 228px;
+        background: url('img/Seminars Group_combined.jpg') left top no-repeat;
+      }
+      #button_seminargroup:hover {
+        background-position: left bottom;
+      }
+

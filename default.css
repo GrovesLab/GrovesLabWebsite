@@ -134,3 +134,7 @@
         background-position: left bottom;
       }
 
+
+      h3 {
+          text-decoration: underline;
+      }

@@ -138,3 +138,7 @@
       h3 {
           text-decoration: underline;
       }
+
+      ul.publication > li {
+          margin-bottom: 20px;
+      }

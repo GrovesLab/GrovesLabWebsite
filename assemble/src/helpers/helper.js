@@ -9,3 +9,9 @@ module.exports.paper = function (paper)  {
 	return res;
 };
 
+module.exports.spliced_each = function(a, from, to, block) {
+    var s = '';
+    for(var i = from; i < to; ++i)
+        s += block(a[i]);
+    return s;
+} ;

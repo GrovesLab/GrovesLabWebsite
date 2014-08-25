@@ -3,316 +3,141 @@ title: Scientists - Groves Lab
 layout: default.hbs
 ---
 
-<h3>Professor</h3>
-<table border="0" width="640"><tbody><tr>
-    <td width="152"><img src="scientists/Jay.jpg" width="152" height="156" border="0"></td>
-    <td width="478">
-        <p>&nbsp;&nbsp;Jay T Groves<br><br>
-            &nbsp;&nbsp;&nbsp;Professor of Chemistry<br>
-            &nbsp;&nbsp;&nbsp;HHMI Investigator<br>
-            &nbsp;&nbsp;&nbsp;Office: 408A Stanley Hall<br>
-            &nbsp;&nbsp;&nbsp;Phone:(510)666-3602<br>
-            &nbsp;&nbsp;&nbsp;e-mail: jtgroves <i><font size="2">AT</font></i> lbl <i><font size="2">DOT</font></i> gov&nbsp;&nbsp;<br>
-            &nbsp;&nbsp;&nbsp;<a href="./CV_Jay%20Groves.pdf">CV</a></p>
+<head>
 
-    </td>
-</tr></tbody></table>
-<p>&nbsp;</p>
+    <style>
+        div.student {
+            width: 250px;
+            height: 210px;
+            float: left;
+        }
+
+        div.clear {
+            clear: both;
+        }
+        div.section {
+            margin-bottom: 60px;
+        }
+    </style>
+
+
+</head>
+
+<div class='section' id='professor'>
+<h3>Professor</h3>
+<table border="0" width="640">
+    <tbody>
+    <tr>
+        <td width="180"><img src="scientists/Jay.jpg" width="152" height="156" border="0"></td>
+        <td width="478">
+            <div>Jay T Groves</div>
+            <div style='margin-top: 15px;'>
+                Professor of Chemistry<br>
+                HHMI Investigator<br>
+                Office: 408A Stanley Hall<br>
+                Phone:(510)666-3602<br>
+                e-mail: jtgroves <i><font size="2">AT</font></i> lbl <i><font size="2">DOT</font></i>
+                gov&nbsp;&nbsp;<br>
+                <a href="./CV_Jay%20Groves.pdf">CV</a>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
 
 <div class='section' id='postdoc'>
     <h3>Postdocs</h3>
-    <table width="750" bordercolordark="#333333" bordercolorlight="#333333" cellpadding="0" cellspacing="0"><tbody>
-    <tr>
-
-        <td class="student">
-            <a href="./scientists/Wan.html">
-                <img class="pic" src="scientists/Wan.jpg">
+    {{#each postdocs}}
+        <div class="student">
+            <a href="./scientists/{{name}}.html">
+                <img class="pic" src="scientists/{{name}}.jpg">
             </a>
-            <p><a href="./scientists/Wan.html">Wan Li</a></p>
-        </td>
 
-        <td class="student">
-            <a href="./scientists/Jean.html">
-                <img class="pic" src="scientists/Jean.jpg">
-            </a>
-            <p><a href="./scientists/Jean.html">Jean Chung</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Scott.html">
-                <img class="pic" src="scientists/andy.jpg">
-            </a>
-            <p><a href="./scientists/Scott.html">Scott Hansen</a></p>
-        </td>
-
-    </tr>
-
-    <tr>
-
-        <td class="student">
-            <a href="./scientists/YoungKwang.html">
-                <img class="pic" src="scientists/YoungKwang.jpg">
-            </a>
-            <p><a href="./scientists/YoungKwang.html">Young Kwang Lee</a></p>
-        </td>
-
-        <td class="student">
-        </td>
-
-        <td class="student">
-        </td>
-
-    </tr>
-    </tbody></table>
+            <p><a href="./scientists/{{name}}.html">{{fullname}}</a></p>
+        </div>
+    {{/each}}
+    <div class="clear"></div>
 </div> <!-- #postdoc -->
 
 
 <div class='section' id='grad'>
     <h3>Graduate Students</h3>
-    <table cellpadding="0" cellspacing="0" width="750" bordercolordark="#333333" bordercolorlight="#333333"><tbody>
-    <tr>
-        <td class="student">
-            <a href="./scientists/Heather.html">
-                <img class="pic" src="scientists/Heather2.jpg">
+    {{#each students}}
+        <div class="student">
+            <a href="./scientists/{{name}}.html">
+                <img class="pic" src="scientists/{{name}}.jpg">
             </a>
-            <p><a href="./scientists/Heather.html">Heather Jensen</a></p>
-        </td>
 
-        <td class="student">
-            <a href="./scientists/Geoff.html">
-                <img class="pic" src="scientists/Geoff.jpg">
-            </a>
-            <p><a href="./scientists/Geoff.html">Geoffrey O'Donoghue</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Nicole.html">
-                <img class="pic" src="scientists/Nicole2.jpg">
-            </a>
-            <p><a href="./scientists/Nicole.html">Nicole Fay</a></p>
-        </td>
-
-    </tr>
-
-    <tr>
-
-        <td class="student">
-            <a href="./scientists/Adrienne.html">
-                <img class="pic" src="scientists/Adrienne.jpg">
-            </a>
-            <p><a href="./scientists/Adrienne.html">Adrienne Greene</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Jamie.html">
-                <img class="pic" src="scientists/Jamie.jpg">
-            </a>
-            <p><a href="./scientists/Jamie.html">Jamie Kulp</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Kate.html">
-                <img class="pic" src="scientists/Kate.jpg">
-            </a>
-            <p><a href="./scientists/Kate.html">Kate Alfieri</a></p>
-        </td>
-
-    </tr>
-
-    <tr>
-
-        <td class="student">
-            <a href="./scientists/Hiro.html">
-                <img class="pic" src="scientists/Hiro.jpg">
-            </a>
-            <p><a href="./scientists/Hiro.html">Hiroyuki Kai</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Jenny.html">
-                <img class="pic" src="scientists/Jenny.jpg">
-            </a>
-            <p><a href="./scientists/Jenny.html">Jenny Lin</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Meimei.html">
-                <img class="pic" src="scientists/Meimei.jpg">
-            </a>
-            <p><a href="./scientists/Meimei.html">Meimei Dong</a></p>
-        </td>
-
-    </tr>
-
-    <tr>
-
-        <td class="student">
-            <a href="./scientists/William.html">
-                <img class="pic" src="scientists/William.jpg">
-            </a>
-            <p><a href="./scientists/William.html">William Huang</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Meredith.html">
-                <img class="pic" src="scientists/Meredith.jpg">
-            </a>
-            <p><a href="./scientists/Meredith.html">Meredith Triplet</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Mon.html">
-                <img class="pic" src="scientists/Mon.jpg">
-            </a>
-            <p><a href="./scientists/Mon.html">Monatrice Lam</a></p>
-        </td>
-
-    </tr>
-
-    <tr>
-
-        <td class="student">
-            <a href="./scientists/Steven.html">
-                <img class="pic" src="scientists/Steven.jpg">
-            </a>
-            <p><a href="./scientists/Steven.html">Steven Alvarez</a></p>
-        </td>
-
-        <td class="student">
-            <a href="./scientists/Darren.html">
-                <img class="pic" src="scientists/Darren.jpg">
-            </a>
-            <p><a href="./scientists/Darren.html">Darren McAffee</a></p>
-        </td>
-
-        <td></td>
-
-    </tr>
-
-    </tbody></table>
+            <p><a href="./scientists/{{name}}.html">{{fullname}}</a></p>
+        </div>
+    {{/each}}
+    <div class="clear"></div>
 </div> <!-- #grad -->
+
 <div class='section' id='undergrad'>
     <h3>Undergraduate Students</h3>
-    <table width="750" bordercolordark="#333333" bordercolorlight="#333333" cellpadding="0" cellspacing="0"><tbody>
-    <tr>
+    <table width="750" bordercolordark="#333333" bordercolorlight="#333333" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td class="student">
+                <a href="./scientists/Cody.html">
+                    <img class="pic" src="scientists/andy.jpg">
+                </a>
 
-        <td class="student">
-            <a href="./scientists/Cody.html">
-                <img class="pic" src="scientists/andy.jpg">
-            </a>
-            <p><a href="./scientists/Cody.html">Cody Holik</a></p>
-        </td>
+                <p><a href="./scientists/Cody.html">Cody Holik</a></p>
+            </td>
+            <td style='width: 250px;'></td>
 
-        <td style='width: 250px;'></td>
-
-    </tr>
-    </tbody></table>
+        </tr>
+        </tbody>
+    </table>
 
 </div> <!-- undergrad -->
+
 <div class='section' id='affiliate'>
     <h3>Research Affiliates</h3>
-    <table cellpadding="0" cellspacing="0" width="750" bordercolordark="#333333" bordercolorlight="#333333"><tbody>
-    <tr>
-        <td class="student"><a href="./scientists/ChengHan.html"><img src="scientists/ChengHan.jpg" width="186" height="140" border="0"></a>
-            <p><a href="./scientists/ChengHan.html">Cheng-Han Yu</a></p>
-        </td>
-        <td class="student"><a href="./scientists/Kabir.html"><img src="scientists/Kabir.jpg" width="186" height="140" border="0"></a>
-            <p><a href="./scientists/Kabir.html">Kabir Hassan Biswas</a></p>
-        </td>
-        <td class="student"></td>
-    </tr>
-    </tbody></table>
+    <table cellpadding="0" cellspacing="0" width="750" bordercolordark="#333333" bordercolorlight="#333333">
+        <tbody>
+        <tr>
+            <td class="student"><a href="./scientists/ChengHan.html"><img src="scientists/ChengHan.jpg" width="186"
+                                                                          height="140" border="0"></a>
+
+                <p><a href="./scientists/ChengHan.html">Cheng-Han Yu</a></p>
+            </td>
+            <td class="student"><a href="./scientists/Kabir.html"><img src="scientists/Kabir.jpg" width="186"
+                                                                       height="140" border="0"></a>
+
+                <p><a href="./scientists/Kabir.html">Kabir Hassan Biswas</a></p>
+            </td>
+            <td class="student"></td>
+        </tr>
+        </tbody>
+    </table>
 </div> <!-- #affiliate -->
 
 <div class='section' id='alumni'>
     <h3>Alumni</h3>
     <ul>
-        <li>Dr. Wan-Chen Lin (Postdoc)</li>
-        <li>Dr. G</li>
-        <li>Dr. Michael Coyle</li>
-        <li>Dr. Hsiung-Lin Tu</li>
-        <li>Dr. Sune Christensen (Postdoc)</li>
-        <li>Dr. Rafal Pielak(Postdoc)</li>
-        <li>Dr. Sam Lord (Postdoc)</li>
-        <li>Dr. Hector Huang</li>
-        <li>Dr. Kevin Hartman</li>
-        <li>Dr. Il-hyung Lee</li>
-        <li>Dr. Aiwei Tian (Postdoc)</li>
-        <li>Dr. Alexander Smoligovets</li>
-        <li>Dr. Christopher Rhodes</li>
-        <li>Dr. Rebecca Petit</li>
-        <li>Dr. Adam Smith (Postdoc)</li>
-        <li>Dr. Yan Yu (Postdoc) <span class="website">| <a href="http://www.indiana.edu/~yulab/">Lab Webpage</a></span>
-        </li>
-        <li>Dr. Lars Iversen (Postdoc)</li>
-        <li>Dr. Ni&ntilde;a Hartman</li>
-        <li>Dr. Hung-Jen Wu (Postdoc)</li>
-        <li>Dr. Qian (Elizabeth) Xu</li>
-        <li>Dr. Sara Triffo</li>
-        <li>Dr. Theo Lohm&uuml;ller</li>
-        <li>Dr. Pradeep Nair</li>
-        <li>Dr. BoryanaManz</li>
-        <li>Dr. Cheng-Han Yu</li>
-        <li>Dr. Joe Hickey</li>
-        <li>Dr. Khalid Salaita (Postdoc) <span class="website"> | <a href="http://chemistry.emory.edu/faculty/salaita/">Lab Webpage</a></span>
-        </li>
-        <li>Dr. William Galush</li>
-        <li>Dr. Jeffrey Nye</li>
-        <li>Dr. Martin B. Forstner (Postdoc)</li>
-        <li>Dr. Nathan Clack</li>
-        <li>Dr. Bryan Jackson</li>
-        <li>Dr. Esther Gomez</li>
-        <li>Dr. Steve Andrews</li>
-        <li>Neil Switz (<a href="http://www.cchem.berkeley.edu/rjsgrp/">Saykally Group</a>)</li>
-        <li>Dr. Sharon Rozovsky (Postdoc)</li>
-        <li>Dr. Michael Baksh</li>
-        <li>Dr. Raghu Parthasarathy (Postdoc)
-            <span class="website">| <a href="http://physics.uoregon.edu/~raghu/index.html">Lab Webpage</a></span>
-        </li>
-        <li>Dr. Kaspar Mossman</li>
-        <li>Dr. Jwa-Min Nam (Postdoc)
-            <span class="website"> | <a href="http://chem3.snu.ac.kr/~namgroup/">Lab Webpage</a></span>
-        </li>
-        <li>Dr. Yoshi Kaizuka
-            <span class="website"> | <a href="mailto:kaizukaatcmpdotucsf">e-mail</a></span>
-        </li>
-        <li>Dr. Sophie Pautot (Postdoc)</li>
-        <li>Dr. Annapoorna Sapuri (Postdoc)</li>
-        <li>Laura Norin (Masters) </li>
-        <li>Dr. Amber Wise </li>
-        <li>Dr. Andrew DeMond</li>
+        {{#each alumni}}
+            <li>{{name}}
+                {{#if postdoc}}
+                    (Postdoc)
+                {{/if}}
+                {{#if website}}
+                    <span class="website">| <a href="{{website}}">Lab Webpage</a></span>
+                {{/if}}
+                {{{note}}}
+            </li>
+        {{/each}}
     </ul>
 </div> <!-- #alumni -->
+
 <div class='section' id='alumni-undergrad'>
     <h2>Undergraduate Alumni</h2>
-    <p>
-    </p>
     <ul>
-        <li>Dae-Young Bae</li>
-        <li>Eulanca Liu</li>
-        <li>Jeena Lee</li>
-        <li>Daniel Tran</li>
-        <li>Eldon Chou</li>
-        <li>Samantha Chiang</li>
-        <li>Julia Ying</li>
-        <li>Eulanca Liu</li>
-        <li>Sakina Palida</li>
-        <li>Adeleh Moghaddam</li>
-        <li>Matt Hess</li>
-        <li>Linda Tseng</li>
-        <li>Christina Penfield</li>
-        <li>Judy Yih-Ching Chen</li>
-        <li>Serenity Wang</li>
-        <li>Paul Cripe</li>
-        <li>Brian Deegan</li>
-        <li>Tairi Nishizawa</li>
-        <li>Daniel Poon</li>
-        <li>Maria Gilleece</li>
-        <li>Haike Ghazarian</li>
-        <li>Amy Wong </li>
-        <li>Myun Hwa Kang</li>
-        <li>Charles Poon</li>
-        <li>Heela Issaq</li>
-        <li>Sarah Shelby</li>
-
+        {{#each alumni_undergrad}}
+            <li>{{name}}</li>
+        {{/each}}
     </ul>
+</div>

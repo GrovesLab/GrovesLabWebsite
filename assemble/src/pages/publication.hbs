@@ -3,24 +3,30 @@ title: "Publications - Groves Lab"
 layout: default.hbs
 ---
 
-<p><u><b><font size="5"><i>Publications</i></font></b></u><b><font size="5"><i><br></i></font></b></p>
-<!--    <p style="text-align:center;"><object type="application/x-shockwave-flash" width="600px" height="180px">
-    <param name="movie" value="img/publication animation2.swf">
-<param name="play" value="true">
-<param name="loop" value="true">
-<param name="quality" value="high">
-<embed width="600" height="180" src="img/publication%20animation2.swf" play="true" loop="true" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object></p>
--->
+
+<h2>Publications</h2>
+
+<ul class='publication'>
+{{#each publication}}
+<li>
+    <span class="pub-number">{{number}}</span>. <i class='journal'>{{journal}}</i> <b class='year'>{{year}}</b>,
+    <span class="volume">{{volume}}</span>, <span class="pages">{{pages}}</span>:
+    &quot;<a class='title' {{#if url}}href="{{url}}"{{/if}}>{{title}}</a>&quot;, <span class='authors'>{{authors}}</span>.
+</li>
+{{/each}}
+</ul>
 
 <div style="text-align:justify;">
 <p><b><i>- 2014 -</i></b></p>
+<p class='MsoNormal'>120. <i>Science</i> <b>2014</b>, 345, 50-54: <a href='http://www.sciencemag.org/content/345/6192/50.abstract'>&quot;Ras activation by SOS: Allosteric regulation by altered fluctuation dynamics&quot;</a>, Lars Iversen<sup>1</sup>, Hsiung-Lin Tu<sup>1</sup>, Wan-Chen Lin, Sune M. Christensen, Steven M. Abel, Jeff Iwig, Hung-Jen Wu, Jodi Gureasko, Christopher Rhodes, Rebecca S. Petit, Scott D. Hansen, Peter Thill, Cheng-Han Yu, Dimitrios Stamou, Arup K. Chakraborty, John Kuriyan, and Jay T. Groves.</p>
+
 <p class='MsoNormal'>119. <i>Biophysical Journal</i> <b>2014</b>, 106, 2196-2205: <a href='http://www.sciencedirect.com/science/article/pii/S0006349514003464'>&quot;Spatial Organization of EphA2 at the Cell-Cell Interface Modulates Trans-Endocytosis of EphrinA1&quot;</a>, Adrienne C. Greene<sup>1</sup>, Samuel J. Lord<sup>1</sup>, Aiwei Tian, Christopher Rhodes, Hiroyuki Kai, and Jay T. Groves.</p>
 <p class='MsoNormal'>118. <i>Nano Lett.</i> <b>2014</b>, 14, 2293-2298: <a href='http://pubs.acs.org/doi/abs/10.1021/nl404514e'>&quot;Size-based chromatography of signaling clusters in a living cell membrane&quot;</a>, Niña G. Caculitan<sup>1</sup>, Hiroyuki Kai<sup>1</sup>, Eulanca Y. Liu<sup>1</sup>, Nicole Fay, Yan Yu, Theobald Lohmüller, Geoff P. O’Donoghue, and Jay T. Groves.</p>
 
 &nbsp;&nbsp;&nbsp;See also:<br>
 &nbsp;&nbsp;&nbsp;<a href="http://www.nature.com/nchembio/journal/v10/n6/full/nchembio.1540.html" title="Receptors navigate an array">Highlighted on Nature Chemical Biology</a></p>
 
-<p class='MsoNormal'>117. <i>Proc. Natl. Acad. Sci USA</i> <b>2014</b> <i>in press</i>: <a href='http://www.pnas.org/content/early/2014/02/05/1321155111'>&quot;H-Ras forms dimers on membrane surfaces via a protein-protein interface&quot;</a>, Wan-Chen Lin<sup>1</sup>, Lars Iversen<sup>1</sup>, Hsiung-Lin Tu, Christopher Rhodes, Sune M. Christensen, Jeffrey S. Iwig, Scott D. Hansen, William Y. C. Huang, and Jay T. Groves</P>
+<p class='MsoNormal'>117. <i>Proc. Natl. Acad. Sci USA</i> <b>2014</b>, 111, 2996-3001: <a href='http://www.pnas.org/content/111/8/2996.abstract'>&quot;H-Ras forms dimers on membrane surfaces via a protein-protein interface&quot;</a>, Wan-Chen Lin<sup>1</sup>, Lars Iversen<sup>1</sup>, Hsiung-Lin Tu, Christopher Rhodes, Sune M. Christensen, Jeffrey S. Iwig, Scott D. Hansen, William Y. C. Huang, and Jay T. Groves</P>
 <p class='MsoNormal'>116. <i>eLife</i> <b>2014</b>, 3:e01610: <a href='http://elife.elifesciences.org/content/3/e01610'>&quot;Activation-triggered subunit exchange between CaMKII holoenzymes facilitates the spread of kinase activity&quot;</a> Margaret M. Stratton<sup>1</sup>, Il-Hyung Lee<sup>1</sup>, Moitrayee Bhattacharyya, Sune M. Christensen, Luke H. Chao, Howard Schulman, Jay T. Groves, and John Kuriyan.</p>
 <p><b><i>- 2013 -</i></b></p>
 <p class='MsoNormal'>115. <i>Biophys. J.</i> <b>2013</b>, 105, L11: <a href='http://dx.doi.org/10.1016/j.bpj.2013.06.031'>&quot;Ratiometric Imaging of the T-Cell Actin Cytoskeleton Reveals the Nature of Receptor-Induced Cytoskeletal Enrichment&quot;</a>, Alexander A. Smoligovets, Adam W. Smith, and Jay T. Groves</p>
@@ -92,14 +98,14 @@ layout: default.hbs
 
 <p class="MsoNormal">91. <i>Communicative &amp; Integrative Biology</i>, <b>2010</b>, 3:5, 454-457: <a href="http://www.landesbioscience.com/journals/cib/article/12418/">"Roles of the cytoskeleton in regulating EphA2 signals."</a>, Khalid Salaita and Jay T. Groves.</p>
 
-<p class="MsoNormal">90. <i>PNAS</i>, <b>2010</b>, 107(45): <a href="http://www.pnas.org/content/107/45/19213.full">"Engineering of a synthetic electron conduit in living cells."</a>, Heather M. Jensen, Aaron E. Albers, Konstantin R. Malley, Yuri Y. Londer, Bruce E. Cohen, Brett A. Helms, Peter Weigele, Jay T. Groves, Caroline M. Ajo-Franklin.</p>
+<p class="MsoNormal">90. <i>PNAS</i>, <b>2010</b>, 107, 19213-19218: <a href="http://www.pnas.org/content/107/45/19213.full">"Engineering of a synthetic electron conduit in living cells."</a>, Heather M. Jensen, Aaron E. Albers, Konstantin R. Malley, Yuri Y. Londer, Bruce E. Cohen, Brett A. Helms, Peter Weigele, Jay T. Groves, Caroline M. Ajo-Franklin.</p>
 
 <p class="MsoNormal">89. <i>Med. Biol. Eng. Comput.</i>, <b>2010</b>, 48(10): <a href="http://dx.doi.org/10.1007/s11517-010-0634-x">"Engineering supported membranes for cell biology."</a>, Cheng-Han Yu, Jay T. Groves.</p>
 
 
 <p class="MsoNormal">88. <i>New J. Phys.</i>, <b>2010</b>, 12 095001: <a href="http://iopscience.iop.org/1367-2630/12/9/095001/">"Bending-mediated superstructural organizations in phase-separated lipid membranes."</a>, Yoshihisa Kaizuka, Jay T. Groves</p>
 
-<p class="MsoNormal">87. <i>PLoS ONE</i>, <b>2010</b>, 5(7): <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0011878">"Altered Actin Centripetal Retrograde Flow in Physically Restricted Immunological Synapses."</a>, Cheng-han Yu, Hung-Jen Wu, Yoshihisa Kaizuka, Ronald D. Vale, Jay T. Groves.</p>
+<p class="MsoNormal">87. <i>PLoS ONE</i>, <b>2010</b>, 5, e11878: <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0011878">"Altered Actin Centripetal Retrograde Flow in Physically Restricted Immunological Synapses."</a>, Cheng-han Yu, Hung-Jen Wu, Yoshihisa Kaizuka, Ronald D. Vale, Jay T. Groves.</p>
 
 <p class="MsoNormal">86. <i>Nat. Struct. Mol. Biol.</i>, <b>2010</b>, 17, 659-665: <a href="http://www.nature.com/nsmb/journal/v17/n6/abs/nsmb.1844.htmll">"Molecular mechanisms in signal transduction at the membrane"</a>, Jay T. Groves and John Kuriyan.</p>
 

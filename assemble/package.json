@@ -1,11 +1,12 @@
 {
-  "name": "assemble-example",
+  "name": "groves-lab-website",
   "version": "0.0.1",
-  "description": "assemble example",
+  "description": "Assemble for Groves Lab website",
   "license": "MIT",
   "devDependencies": {
-    "grunt": "~0.4.1",
     "assemble": "~0.4.17",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-convert": "^0.1.11"
   }
 }
